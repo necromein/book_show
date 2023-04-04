@@ -1,0 +1,291 @@
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    background: url(bg.png) no-repeat center fixed;
+	background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+.menu, .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    text-align: center;
+    padding: 0 2em;
+}
+
+.menu h1, .et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+.menu h2, .et-slide h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    flex-wrap: nowrap;
+    justify-content:  center;
+    gap: 20px;
+}
+.menu-container--top {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    flex-wrap: nowrap;
+    justify-content:  center;
+    gap: 20px;
+}
+
+.menu-container--top .et-hero-tab p {
+    font-size: 12px;
+}
+
+.head, .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*height: 100vh;*/
+    position: relative;
+
+    text-align: center;
+    padding: 0 2em;
+}
+
+.head h1, .et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.6rem;
+}
+.head h2, .et-slide h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+
+.razdel {
+    margin-top: 60px;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    padding: 10.5556px;
+    gap: 5px;
+    
+    width: auto;
+    height: 40px;
+    
+    border: 1px solid #565656;
+    border-radius: 20px;
+
+}
+
+.et-hero-tab p {
+    font-size: 18px;
+}
+
+
+.et-hero-tab:hover {
+    color: white;
+    background: #8f8d8d;
+    transition: all 0.5s ease;
+}
+
+.book-tab {
+    display: flex;
+    justify-content: center;
+    color: #000;
+
+    padding: 10.5556px;
+    gap: 5px;
+    
+    width: 1000px;
+    height: auto;
+
+    background: rgba(255, 255, 255, 0.35);    
+    box-sizing: border-box;
+    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
+    border-radius: 20px ;
+}
+
+
+.det {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+
+    padding: 10.5556px;
+    gap: 20px;
+
+}
+
+
+.det-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+    
+
+    padding: 10.5556px;
+    gap: 5px;
+    /*
+    box-sizing: border-box;
+    border: 1px solid #565656;
+    border-radius: 20px; */
+}
+
+.que {
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    text-align: center;
+    width: 230px;
+  }
+  
+  .search {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+  
+  .search:hover {
+    background: #8f8d8d0f;
+  }
+  
+  .search:hover input {
+    max-width: 180px;
+  }
+  
+  .search input {
+    background: transparent;
+    border: 0;
+    max-width: 0;
+    padding: 0;
+    text-indent: 12px;
+    color: #000;
+    font-size: 22px;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .search input::placeholder {
+    color: #8f8d8d;
+  }
+  
+  .search span {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: #8f8d8dc3;
+    color: #f9f9f9;
+    border-radius: inherit;
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+.knop {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .menu h1, .et-slide h1 {
+        font-size: 3rem;
+   }
+    .menu h3, .et-slide h3 {
+        font-size: 1rem;
+   }
+    .et-hero-tab {
+        font-size: 1rem;
+   }
+}
+
+.card .bbk {
+    text-align: right;
+    font-weight: 900;
+}
+
+.card tbody{
+    text-align: justify;
+    /*word-break: break-all;*/
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+
+}
+
+.card .bo {
+    height: 0px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    padding: 10.5556px;
+    gap: 5px;
+    
+    width: auto;
+    height: 40px;
+    
+    border: 1px solid #565656;
+    border-radius: 20px;
+
+}
+
+.back:hover {
+    color: white;
+    background: #8f8d8d;
+    transition: all 0.5s ease;
+}
+
+
